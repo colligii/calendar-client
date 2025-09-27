@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import SystemHeader from "@/components/ui/SystemHeader";
+import { Toaster } from "sonner";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -15,6 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        <Toaster position="top-center"/>
         <SystemHeader/>
         {children}
       </body>
